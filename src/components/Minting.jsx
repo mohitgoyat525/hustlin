@@ -30,7 +30,7 @@ const Minting = () => {
       <>
           <div id="minting" className="max-xl:px-4">
       <div className="max-w-[1140px] mx-auto max-xl:px-4 w-full py-[88px] max-xl:py-16 max-lg:py-14 max-md:py-11 max-sm:py-10">
-        <CustomHeading headingText="Minting" myClass="uppercase" />
+        <CustomHeading headingText="Minting"  />
       </div>
 
       <div className="w-full border-y-2 border-solid border-black">

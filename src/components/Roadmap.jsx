@@ -8,7 +8,7 @@ const Roadmap = () => {
   return (
     <div id="roadmap">
       <div className="container max-w-[1172px] mx-auto px-4 py-[88px] max-sm:py-10 max-xl:py-16 max-lg:py-14 max-md:py-12">
-        <CustomHeading headingText="RoadMap" myClass="uppercase" />
+        <CustomHeading headingText="RoadMap"  />
       </div>
       <div className="border-b-2 border-black w-full"></div>
       <div className="relative flex flex-col items-center container max-w-[1172px] mx-auto px-4 pl-4 xl:border-x-2 lg:pt-[99px] pt-10 xl:pb-[186px] lg:pb-[120px] md:pb-[70px] pb-16">

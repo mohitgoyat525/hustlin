@@ -13,7 +13,7 @@ const LatestTweet = () => {
     <>
       <div id='aboutus' className="max-xl:px-4">
         <div className="w-full flex items-center justify-between max-w-[1140px] mx-auto py-[90px] max-xl:py-16 max-lg:py-14 max-md:py-12 max-sm:py-10">
-          <CustomHeading headingText="Latest Tweet" myClass="uppercase" />
+          <CustomHeading headingText="Latest Tweet" />
           <div className="flex items-center gap-[56px] max-md:gap-6">
             <p className="swiper-prev cursor-pointer">
               <PrevIcon />

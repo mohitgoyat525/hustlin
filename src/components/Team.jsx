@@ -16,7 +16,7 @@ const Team = () => {
         id="team"
         className="py-[88px] max-w-[1140px] mx-auto flex px-4 items-center justify-between max-sm:py-10 max-xl:py-16 max-lg:py-14 max-md:py-12"
       >
-        <CustomHeading headingText="Team" myClass="uppercase" />
+        <CustomHeading headingText="Team" />
         <div className="flex items-center gap-[56px] max-md:gap-6">
           <p className="swiper-prev cursor-pointer">
             <PrevIcon />
@@ -56,7 +56,7 @@ const Team = () => {
                         height={88}
                         className="w-full max-w-[88px] pointer-events-none mx-auto"
                       />
-                      <h2 className="text-4xl text-center py-4 font-black text-[#70675F] max-lg:text-3xl max-md:text-2xl">
+                      <h2 className="text-4xl text-center shadows py-4 font-black text-[#70675F] max-lg:text-3xl max-md:text-2xl">
                         {obj.title}
                       </h2>
                       <p className="text-center mx-auto font-normal text-base  max-w-[407px]">
