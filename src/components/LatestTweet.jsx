@@ -11,10 +11,10 @@ import { TWEET_LIST } from '@/utils/helper';
 const LatestTweet = () => {
   return (
     <>
-      <div className="max-xl:px-4">
+      <div id='aboutus' className="max-xl:px-4">
         <div className="w-full flex items-center justify-between max-w-[1140px] mx-auto py-[90px] max-xl:py-16 max-lg:py-14 max-md:py-12 max-sm:py-10">
           <CustomHeading headingText="Latest Tweet" myClass="uppercase" />
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-[56px] max-md:gap-6">
             <p className="swiper-prev cursor-pointer">
               <PrevIcon />
             </p>
@@ -52,11 +52,11 @@ const LatestTweet = () => {
                       </h2>
                       <div className="flex items-center gap-3 pt-3">
                         <p>{obj.icon}</p>
-                        <p className="font-normal text-sm leading-[100%]">
+                        <p className="font-normal text-sm">
                           {obj.date}
                         </p>
                       </div>
-                      <p className="font-normal text-base leading-[100%] pt-3">
+                      <p className="font-normal text-base pt-3">
                         {obj.description}
                       </p>
                       <p className="text-base font-normal leading-[140%] w-full max-w-[83px] whitespace-nowrap cursor-pointer pt-4 border-b border-solid border-black">

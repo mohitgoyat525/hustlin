@@ -125,3 +125,30 @@ export const BlueBird = () => (
     />
   </svg>
 );
+
+export const PlusIcon = () => (
+  <svg
+    width="11"
+    height="11"
+    viewBox="0 0 11 11"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M4.88 10.568V6.224H0.56V4.616H4.88V0.271999H6.512V4.616H10.856V6.224H6.512V10.568H4.88Z"
+      fill="black"
+    />
+  </svg>
+);
+
+export const MinusIcon = () => (
+  <svg
+    width="7"
+    height="3"
+    viewBox="0 0 7 3"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M0.6 2.576V0.344H6.84V2.576H0.6Z" fill="black" />
+  </svg>
+);

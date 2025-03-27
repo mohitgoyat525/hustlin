@@ -4,7 +4,7 @@ import CustomHeading from "./common/CustomHeading";
 import Image from "next/image";
 import { MINIT_LIST } from "@/utils/helper";
 const Minting = () => {
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(100);
   const [timeLeft, setTimeLeft] = useState(
     40 * 86400 + 15 * 3600 + 12 * 60 + 10
   );
@@ -28,7 +28,7 @@ const Minting = () => {
 
   return (
       <>
-          <div className="max-xl:px-4">
+          <div id="minting" className="max-xl:px-4">
       <div className="max-w-[1140px] mx-auto max-xl:px-4 w-full py-[88px] max-xl:py-16 max-lg:py-14 max-md:py-11 max-sm:py-10">
         <CustomHeading headingText="Minting" myClass="uppercase" />
       </div>
@@ -36,7 +36,7 @@ const Minting = () => {
       <div className="w-full border-y-2 border-solid border-black">
         <div className="w-full flex items-center max-xl:px-4 gap-[133px] max-xl:gap-20 max-xl:py-5 max-lg:flex-wrap max-lg:justify-center max-lg:max-w-full max-lg:gap-14  max-w-[1140px] mx-auto border-x-2 border-solid border-black">
           <div className="ps-6 max-lg:ps-4 max-lg:pe-4 w-full max-w-[438px] max-lg:max-w-full">
-            <p className="text-base font-normal leading-[100%]">
+            <p className="text-base font-normal">
               Most of the Hustlin’ Hardos first experienced NFTs via other
               successful projects like NBA TopShot, where revealing your newly
               minted item invoked the same emotions as opening up that first
@@ -50,28 +50,28 @@ const Minting = () => {
               className="border-2 border-solid border-black mt-4 flex items-center justify-center w-full max-w-[238px] h-[53px]"
             >
               <button
-                className="text-black text-4xl font-semibold px-6 border-r-2 border-solid  h-[53px]"
+                className="text-black text-4xl font-semibold px-6 border-r-2 cursor-pointer border-solid  h-[53px]"
                 onClick={() => setCount((prev) => (prev > 1 ? prev - 1 : 1))}
               >
                 -
               </button>
-              <p className="text-black px-6 border-r-2 text-4xl font-semibold border-solid  h-[53px]">
+              <p className="text-black px-6 border-r-2 text-4xl text-center flex items-center font-semibold border-solid  h-[53px]">
                 {count}
               </p>
               <button
-                className="text-black px-6 text-4xl font-semibold"
+                className="text-black px-6 text-4xl font-semibold cursor-pointer"
                 onClick={() => setCount((prev) => prev + 1)}
               >
                 +
               </button>
             </div>
-            <button className="mt-[35px] transition-all ease-linear duration-300 hover:bg-black hover:border-[#FFD600] hover:text-[#FFD600] border-2 border-solid border-black bg-[#FFD600] w-[111px] h-[43px] flex items-center justify-center cursor-pointer text-black font-semibold text-sm leading-[100%]">
+            <button className="mt-[35px] transition-all ease-linear duration-300 hover:bg-black hover:border-[#FFD600] hover:text-[#FFD600] border-2 border-solid border-black bg-[#FFD600] w-[111px] h-[43px] flex items-center justify-center cursor-pointer text-black font-semibold text-sm ">
               Mint Now
             </button>
-            <p className="text-[#00A106] text-lg font-semibold leading-[100%] pt-9">
+            <p className="text-[#00A106] text-lg font-semibold pt-9">
               Time Left
             </p>
-            <p className="text-[#FF0000] text-4xl font-semibold leading-[100%]">
+            <p className="text-[#FF0000] text-4xl font-semibold">
               {formatTime(timeLeft)}
             </p>
                   </div>

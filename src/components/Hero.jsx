@@ -7,7 +7,7 @@ const Hero = () => {
       <Header />
       <div className="w-full max-w-[1920px] mx-auto ">
         <div className="">
-          <h1 className="font-normal px-4 text-center text-[157px] moderfb max-xl:text-[100px] max-lg:text-[80px] max-md:text-6xl max-xs:text-[30px] leading-[100%] pt-[25px]">
+          <h1 className="font-normal px-4 text-center text-[157px] moderfb max-xl:text-[100px] max-lg:text-[80px] max-md:text-6xl max-xs:text-[30px] pt-[25px]">
             THE HUSTLIN’ HARDOS.
           </h1>
           <Image

@@ -6,6 +6,10 @@
     src: url(/assets/fonts/modernofbcomp-bold.otf);
 }
 
+*{
+    scroll-behavior: smooth !important;
+}
+
 body{
      font-family: "Noto Serif", serif;
 }
@@ -19,4 +23,9 @@ body{
 
 .swiper-button-prev:after{
     display: none !important;
+}
+
+.shadows {
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.32), 
+                 2px 2px 4px rgba(0, 0, 0, 0.25) !important;
 }

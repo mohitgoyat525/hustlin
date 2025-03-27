@@ -28,7 +28,7 @@ const Header = () => {
           ))}
         </Marquee>
       </div>
-      <header className='pt-2 pb-4 max-w-[1920px] mx-auto'>
+      <header className="pt-2 pb-4 max-w-[1920px] mx-auto">
         <div className="flex items-center justify-end max-xl:justify-center">
           <div className="flex items-center justify-between w-full 2xl:mr-[420px] max-xl:mr-0  max-2xl:mr-[177px] max-w-[658px] px-4">
             <Link href="/">
@@ -47,23 +47,35 @@ const Header = () => {
                 </li>
               ))}
               <li>
-                <button className="max-md:hidden transition-all ease-linear duration-300 hover:bg-black hover:border-[#FFD600] hover:text-[#FFD600] border-2 border-solid border-black bg-[#FFD600] w-[165px] h-[43px] flex items-center justify-center cursor-pointer text-black font-semibold text-sm leading-[100%]">
+                <button className="max-md:hidden transition-all ease-linear duration-300 hover:bg-black hover:border-[#FFD600] hover:text-[#FFD600] border-2 border-solid border-black bg-[#FFD600] w-[165px] h-[43px] flex items-center justify-center cursor-pointer text-black font-semibold text-sm">
                   Connect Wallet
                 </button>
               </li>
             </ul>
           </div>
         </div>
-          </header>
-          <div className='border-y-2 border solid border-black flex items-center justify-center'>
-              <div className='flex items-center'>
-                  {HEADER_THIRD_LIST.map((item, index) => (
-                      <div className={`flex items-center px-6 justify-center border-s-2 border-solid border-black ${index=== 4? "!border-e-2":""} max-md:px-2 py-1`} key={index}>
-                          <Link href={item.link}><p className='font-normal text-base leading-[100%] max-sm:text-sm'>{item.title}</p></Link>
-                      </div>
-                  ))}
-              </div>
-          </div>
+        <button className="md:hidden mx-auto mt-5 transition-all ease-linear duration-300 hover:bg-black hover:border-[#FFD600] hover:text-[#FFD600] border-2 border-solid border-black bg-[#FFD600] w-[165px] h-[43px] flex items-center justify-center cursor-pointer text-black font-semibold text-sm">
+          Connect Wallet
+        </button>
+      </header>
+      <div className="border-y-2 border solid border-black flex items-center justify-center">
+        <div className="flex items-center">
+          {HEADER_THIRD_LIST.map((item, index) => (
+            <div
+              className={`flex items-center px-6 justify-center border-s-2 border-solid border-black ${
+                index === 4 ? "!border-e-2" : ""
+              } max-md:px-2 py-1`}
+              key={index}
+            >
+              <Link href={item.link}>
+                <p className="font-normal text-base max-sm:text-sm">
+                  {item.title}
+                </p>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   );
 }
