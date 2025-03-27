@@ -5,6 +5,7 @@ import LatestTweet from "@/components/LatestTweet";
 import Minting from "@/components/Minting";
 import Roadmap from "@/components/Roadmap";
 import Team from "@/components/Team";
+import BackToTop from "@/components/common/BackToTop";
 
 
 export default function Home() {
@@ -16,7 +17,8 @@ export default function Home() {
       <Minting />
       <Roadmap />
       <Team />
-      <Faq/>
+      <Faq />
+      <BackToTop/>
     </>
   );
 }

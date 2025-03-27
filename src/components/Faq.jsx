@@ -17,7 +17,7 @@ const Faq = () => {
         id="faqs"
         className="max-w-[1140px] px-4 mx-auto py-[88px] max-sm:py-10 max-xl:py-16 max-lg:py-14 max-md:py-12"
       >
-        <CustomHeading title="FAQS" />
+        <CustomHeading title="Faqs" />
       </div>
       <div className="w-full border-y-2 border-solid border-black px-4">
         <div className="faq-list max-w-[1140px] mx-auto border-l-2 border-r-2">

@@ -87,7 +87,7 @@ const Minting = () => {
                   {MINITING_LIST.map((obj, i) => (
                       <div className="flex flex-col" key={i}>
                           <h3 className="font-normal text-2xl leading-[110%] max-sm:text-xl">{obj}</h3>
-                          <p className="font-semibold text-4xl leading-[110%] max-sm:text-3xl">42</p>
+                          <p className="font-semibold text-4xl leading-[110%] max-sm:text-3xl pt-3">42</p>
                       </div>
                   ))}
               </div>

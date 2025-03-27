@@ -17,7 +17,7 @@ const EditorHardo = () => {
             Huslin’ Hardo NFT is your gateway to The Boardroom, one of the most
             rewarding and engaging online communities
           </p>
-          <p className="font-normal text-base pt-4 cursor-pointer whitespace-nowrap flex flex-col transition-all ease-linear duration-300 hover:text-blue-500">
+          <p className="font-normal text-base pt-4 cursor-pointer whitespace-nowrap w-full max-w-[120px] flex flex-col transition-all ease-linear duration-300 hover:text-blue-500">
             Read More...
             <span className="border border-solid max-w-[100px] mt-[-4px]"></span>
           </p>

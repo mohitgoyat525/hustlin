@@ -32,13 +32,9 @@ const Header = () => {
         <div className="flex items-center justify-end max-xl:justify-center">
           <div className="flex items-center justify-between w-full 2xl:mr-[420px] max-xl:mr-0  max-2xl:mr-[177px] max-w-[658px] px-4">
             <Link href="/">
-              <Image
-                src="/assets/images/png/hustlin-hardos-logo.png"
-                alt="logo"
-                width={103}
-                height={29}
-                className="w-full mx-auto max-w-[103px] h-[29px]"
-              />
+              <p className="text-2xl font-normal leading-[100%] ff-moderfb">
+                Hustlin' Hardos
+              </p>
             </Link>
             <ul className="flex items-center gap-5 max-sm:gap-3">
               {HEADER_SOCIAL_LIST.map((item, index) => (
@@ -48,7 +44,7 @@ const Header = () => {
                 >
                   <Link
                     href={item.link}
-                    target='_blank'
+                    target="_blank"
                     className="transition-all ease-linear duration-300 hover:scale-100"
                   >
                     {item.icon}
