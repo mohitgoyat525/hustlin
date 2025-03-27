@@ -64,7 +64,7 @@ const Faq = () => {
       </div>
       <div className="">
         <p className="text-center pt-8 pb-6 text-base font-normal">
-          © Hustlin' Hardos 2022
+          © Hustlin' Hardos {new Date().getFullYear()}
         </p>
       </div>
     </>
