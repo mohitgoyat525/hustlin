@@ -42,7 +42,7 @@ const Team = () => {
               1024: { slidesPerView: 2 },
               0: { slidesPerView: 1 },
             }}
-            className="w-full max-w-[1140px] mx-auto border-x-2 border-solid border-black"
+            className="w-full max-w-[1140px] mx-auto border-solid border-black"
           >
             <div className="flex items-center">
               {TEAM_LIST.map((obj, i) => (
@@ -59,7 +59,7 @@ const Team = () => {
                       <h2 className="text-4xl text-center py-4 font-black text-[#70675F] max-lg:text-3xl max-md:text-2xl">
                         {obj.title}
                       </h2>
-                      <p className="text-center mx-auto font-normal text-base max-w-[407px]">
+                      <p className="text-center mx-auto font-normal text-base  max-w-[407px]">
                         {obj.description}
                       </p>
                     </dv>

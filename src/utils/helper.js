@@ -49,6 +49,54 @@ export const HEADER_DATA_LIST = [
         img: "/assets/images/png/axd-100.png",
         width:"w-[132px]"
     },
+    {
+        img: "/assets/images/png/shangi.png",
+        width:"w-[135px]"
+    },
+    {
+        img: "/assets/images/png/ftse-100.png",
+        width:"w-[132px]"
+    },
+    {
+        img: "/assets/images/png/asd-100.png",
+        width:"w-[132px]"
+    },
+    {
+        img: "/assets/images/png/brent-crude-oil.png",
+        width:"w-[178px]"
+    },
+    {
+        img: "/assets/images/png/dsc.png",
+        width:"w-[97px]"
+    },
+    {
+        img: "/assets/images/png/axd-100.png",
+        width:"w-[132px]"
+    },
+    {
+        img: "/assets/images/png/shangi.png",
+        width:"w-[135px]"
+    },
+    {
+        img: "/assets/images/png/ftse-100.png",
+        width:"w-[132px]"
+    },
+    {
+        img: "/assets/images/png/asd-100.png",
+        width:"w-[132px]"
+    },
+    {
+        img: "/assets/images/png/brent-crude-oil.png",
+        width:"w-[178px]"
+    },
+    {
+        img: "/assets/images/png/dsc.png",
+        width:"w-[97px]"
+    },
+    {
+        img: "/assets/images/png/axd-100.png",
+        width:"w-[132px]"
+    },
 ]
 export const HEADER_SOCIAL_LIST = [
   {
