@@ -48,23 +48,23 @@ const LatestTweet = () => {
                   <div className={`border-s-2 border-solid border-black `}>
                     <div className="px-6 py-12 flex flex-col justify-between">
                       <div>
-                      <h2 className="font-semibold text-4xl max-sm:text-2xl leading-[110%]">
-                        {obj.title}
-                      </h2>
-                      <div className="flex items-center gap-3 pt-3">
-                        <p>{obj.icon}</p>
-                        <p className="font-normal text-sm">{obj.date}</p>
-                      </div>
-                      <p className="font-normal text-base pt-3">
-                        {obj.description}
-                      </p>
+                        <h2 className="font-semibold text-4xl max-sm:text-2xl leading-[110%]">
+                          {obj.title}
+                        </h2>
+                        <div className="flex items-center gap-3 pt-3">
+                          <p>{obj.icon}</p>
+                          <p className="font-normal text-sm">{obj.date}</p>
+                        </div>
+                        <p className="font-normal text-base pt-3">
+                          {obj.description}
+                        </p>
                       </div>
                       <div>
-                      <p className="text-base font-normal leading-[140%] w-full max-w-[99px] whitespace-nowrap cursor-pointer pt-4 flex flex-col transition-all ease-linear duration-300 hover:text-[#FFD600]">
-                        Read more ...
-                        <span className="border border-solid max-w-[100px] mt-[-4px]"></span>
+                        <p className="text-base font-normal leading-[140%] w-full max-w-[99px] whitespace-nowrap cursor-pointer pt-4 flex flex-col transition-all ease-linear duration-300 hover:text-blue-500">
+                          Read more ...
+                          <span className="border border-solid max-w-[100px] mt-[-4px]"></span>
                         </p>
-                        </div>
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>
