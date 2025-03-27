@@ -182,7 +182,7 @@ export const TWEET_LIST = [
   },
 ];
 
-export const MINITING_LIST = [
+export const MINTING_LIST = [
 
    "Etiam eget",
    "Tristique.",

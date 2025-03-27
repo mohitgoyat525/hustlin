@@ -19,7 +19,7 @@ const Roadmap = () => {
             alt="down-arrow"
             width={5}
             height={1689}
-            className="w-full h-full  lg:mt-[150px] object-contain max-sm:mt-[-37px]"
+            className="w-full h-full  lg:mt-[150px] object-contain max-sm:mt-[-17px]"
           />
         </div>
         {ROADMAP_LIST.map((item, index) => (
@@ -46,7 +46,7 @@ const Roadmap = () => {
                   : "justify-start lg:pr-[65px] pr-5 lg:pl-9"
               } flex-col max-md:!pr-0 max-md:pl-8`}
             >
-              <p className="md:text-sm text-xs font-normal max-md:mt-6 mb-2">
+              <p className="md:text-sm text-xs font-normal max-md:mt-6 max-sm:mt-4 mb-2">
                 {item.name}
               </p>
               <h2 className="lg:text-4xl text-2xl leading-[110%] font-semibold mb-2">
