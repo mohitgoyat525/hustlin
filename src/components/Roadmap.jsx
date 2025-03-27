@@ -1,5 +1,5 @@
 "use client";
-import { ROADMAP_DATA, ROADMAP_LIST } from "@/utils/helper";
+import {  ROADMAP_LIST } from "@/utils/helper";
 import React from "react";
 import Image from "next/image";
 import CustomHeading from "./common/CustomHeading";
