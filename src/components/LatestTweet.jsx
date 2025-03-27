@@ -11,14 +11,14 @@ import { TWEET_LIST } from '@/utils/helper';
 const LatestTweet = () => {
   return (
     <>
-      <div id='aboutus' className="max-xl:px-4">
-        <div className="w-full flex items-center justify-between max-w-[1140px] mx-auto py-[90px] max-xl:py-16 max-lg:py-14 max-md:py-12 max-sm:py-10">
-          <CustomHeading headingText="Latest Tweet" />
+      <div id="about-us" className="max-xl:px-4">
+        <div className="w-full flex items-center justify-between max-w-[1140px] mx-auto py-[80px] max-xl:py-16 max-lg:py-14 max-md:py-12 max-sm:py-10">
+          <CustomHeading title="Latest Tweet" />
           <div className="flex items-center gap-[56px] max-md:gap-6">
-            <p className="swiper-prev cursor-pointer">
+            <p className="swiper-prev cursor-pointer max-md:size-10 max-sm:size-5">
               <PrevIcon />
             </p>
-            <p className="swiper-next cursor-pointer">
+            <p className="swiper-next cursor-pointer max-md:size-10 max-sm:size-5">
               <NextIcon />
             </p>
           </div>
@@ -31,8 +31,8 @@ const LatestTweet = () => {
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             loop
             navigation={{
-              prevEl: ".swiper-prev", 
-              nextEl: ".swiper-next", 
+              prevEl: ".swiper-prev",
+              nextEl: ".swiper-next",
             }}
             breakpoints={{
               1024: { slidesPerView: 3 },
@@ -46,22 +46,25 @@ const LatestTweet = () => {
               {TWEET_LIST.map((obj, i) => (
                 <SwiperSlide key={i}>
                   <div className={`border-s-2 border-solid border-black `}>
-                    <div className="px-6 py-12">
+                    <div className="px-6 py-12 flex flex-col justify-between">
+                      <div>
                       <h2 className="font-semibold text-4xl max-sm:text-2xl leading-[110%]">
                         {obj.title}
                       </h2>
                       <div className="flex items-center gap-3 pt-3">
                         <p>{obj.icon}</p>
-                        <p className="font-normal text-sm">
-                          {obj.date}
-                        </p>
+                        <p className="font-normal text-sm">{obj.date}</p>
                       </div>
                       <p className="font-normal text-base pt-3">
                         {obj.description}
                       </p>
-                      <p className="text-base font-normal leading-[140%] w-full max-w-[99px] whitespace-nowrap cursor-pointer pt-4 border-b border-solid border-black">
+                      </div>
+                      <div>
+                      <p className="text-base font-normal leading-[140%] w-full max-w-[99px] whitespace-nowrap cursor-pointer pt-4 flex flex-col transition-all ease-linear duration-300 hover:text-[#FFD600]">
                         Read more ...
-                      </p>
+                        <span className="border border-solid max-w-[100px] mt-[-4px]"></span>
+                        </p>
+                        </div>
                     </div>
                   </div>
                 </SwiperSlide>

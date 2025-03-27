@@ -14,20 +14,20 @@ const Team = () => {
     <>
       <div
         id="team"
-        className="py-[88px] max-w-[1140px] mx-auto flex px-4 items-center justify-between max-sm:py-10 max-xl:py-16 max-lg:py-14 max-md:py-12"
+        className="py-[80px] max-w-[1140px] mx-auto flex px-4 items-center justify-between max-sm:py-10 max-xl:py-16 max-lg:py-14 max-md:py-12"
       >
-        <CustomHeading headingText="Team" />
+        <CustomHeading title="Team" />
         <div className="flex items-center gap-[56px] max-md:gap-6">
-          <p className="swiper-prev cursor-pointer">
+          <p className="swiper-prev cursor-pointer max-md:size-10 max-sm:size-5">
             <PrevIcon />
           </p>
-          <p className="swiper-next cursor-pointer">
+          <p className="swiper-next cursor-pointer max-md:size-10 max-sm:size-5">
             <NextIcon />
           </p>
         </div>
       </div>
       <div className="border-y-2 border-solid">
-        <div className="max-w-[1140px] w-full mx-auto border-x-2 border-solid border-black">
+        <div className="max-w-[1140px] w-full mx-auto border-x-2 border-solid border-black max-xl:px-4">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={0}
@@ -47,7 +47,7 @@ const Team = () => {
             <div className="flex items-center">
               {TEAM_LIST.map((obj, i) => (
                 <SwiperSlide key={i}>
-                  <div className='bg-center border-s-2 border-solid border-black bg-cover py-[56px] max-lg:py-10 max-lg:max-w-full bg-no-repeat bg-[url("/assets/images/webp/team-swiper-bg-img.webp")] w-full max-w-[570px] h-[316px]'>
+                  <div className='bg-center border-s-2 max-xl:border-x-2 border-solid border-black bg-cover py-[56px] max-lg:py-10 max-lg:max-w-full bg-no-repeat bg-[url("/assets/images/webp/team-swiper-bg-img.webp")] w-full max-w-[570px] h-[316px]'>
                     <dv className="h-full w-full">
                       <Image
                         src={obj.profile}
@@ -74,4 +74,4 @@ const Team = () => {
   );
 }
 
-export default Team
+export default Team;

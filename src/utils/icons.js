@@ -65,7 +65,7 @@ export const MIcon = () => (
   </svg>
 );
 
-export const PirateIcon = () => (
+export const OpenseaIcon = () => (
   <svg
     width="24"
     height="24"

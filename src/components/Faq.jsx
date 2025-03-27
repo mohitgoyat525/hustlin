@@ -17,7 +17,7 @@ const Faq = () => {
         id="faqs"
         className="max-w-[1140px] px-4 mx-auto py-[88px] max-sm:py-10 max-xl:py-16 max-lg:py-14 max-md:py-12"
       >
-        <CustomHeading headingText="FAQS" />
+        <CustomHeading title="FAQS" />
       </div>
       <div className="w-full border-y-2 border-solid border-black px-4">
         <div className="faq-list max-w-[1140px] mx-auto border-l-2 border-r-2">
@@ -29,7 +29,7 @@ const Faq = () => {
               } border-black pl-[30px] pr-11 max-md:px-4 lg:py-8 md:py-5 py-3`}
             >
               <div
-                className="faq-header flex gap-5 justify-between cursor-pointer"
+                className="faq-header flex gap-5 justify-between cursor-pointer items-center"
                 onClick={() => toggleFAQ(index)}
               >
                 <h2 className="lg:text-2xl md:text-xl font-semibold">{item}</h2>
@@ -62,7 +62,7 @@ const Faq = () => {
           ))}
         </div>
       </div>
-      <div className="">
+      <div>
         <p className="text-center pt-8 pb-6 text-base font-normal">
           © Hustlin' Hardos {new Date().getFullYear()}
         </p>

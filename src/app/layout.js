@@ -1,7 +1,5 @@
 import "./globals.css";
 
-
-
 export const metadata = {
   title: "Hustlin",
   description: "THE HUSTLIN’ HARDOS.",
