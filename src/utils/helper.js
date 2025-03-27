@@ -51,27 +51,27 @@ export const HEADER_DATA_LIST = [
     },
 ]
 export const HEADER_SOCIAL_LIST = [
-    {
-        icon: <DiscordIcon />,
-        link:""
-    },
-    {
-        icon: <TwitterIcon />,
-        link:""
-    },
-    {
-        icon: <InstagramIcon />,
-        link:""
-    },
-    {
-        icon: <MIcon />,
-        link:""
-    },
-    {
-        icon: <PirateIcon />,
-        link:""
-    }
-]
+  {
+    icon: <DiscordIcon />,
+    link: "https://discord.com/",
+  },
+  {
+    icon: <TwitterIcon />,
+    link: "https://x.com/",
+  },
+  {
+    icon: <InstagramIcon />,
+    link: "https://instagram.com/",
+  },
+  {
+    icon: <MIcon />,
+    link: "https://medium.com/",
+  },
+  {
+    icon: <PirateIcon />,
+    link: "https://pirate.com/",
+  },
+];
 
 export const HEADER_THIRD_LIST = [
   {
@@ -135,18 +135,12 @@ export const TWEET_LIST = [
 ];
 
 export const MINIT_LIST = [
-  {
-    title: "Etiam eget",
-  },
-  {
-    title: "Tristique.",
-  },
-  {
-    title: "Aliquet ac.",
-  },
-  {
-    title: "Tincidunt.",
-  },
+
+   "Etiam eget",
+   "Tristique.",
+   "Aliquet ac.",
+  "Tincidunt.",
+  
 ];
 
 export const ROADMAP_LIST = [

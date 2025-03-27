@@ -86,7 +86,7 @@ const Minting = () => {
               <div className="w-full flex items-center justify-between max-w-[832px] mx-auto max-md:flex-wrap max-md:gap-5">
                   {MINIT_LIST.map((obj, i) => (
                       <div className="flex flex-col" key={i}>
-                          <h3 className="font-normal text-2xl leading-[110%]">{obj.title}</h3>
+                          <h3 className="font-normal text-2xl leading-[110%]">{obj}</h3>
                           <p className="font-semibold text-4xl leading-[110%]">45</p>
                       </div>
                   ))}

@@ -11,7 +11,10 @@ const Faq = () => {
        };
   return (
     <>
-      <div id='faqs' className="max-w-[1140px] px-4 mx-auto py-[88px] max-sm:py-10 max-xl:py-16 max-lg:py-14 max-md:py-12">
+      <div
+        id="faqs"
+        className="max-w-[1140px] px-4 mx-auto py-[88px] max-sm:py-10 max-xl:py-16 max-lg:py-14 max-md:py-12"
+      >
         <CustomHeading headingText="FAQS" />
       </div>
       <div className="w-full border-y-2 border-solid border-black px-4">
@@ -57,6 +60,9 @@ const Faq = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="">
+        <p className='text-center pt-8 pb-6 text-base font-normal'>© Hustlin' Hardos 2022</p>
       </div>
     </>
   );
