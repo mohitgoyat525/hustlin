@@ -56,14 +56,14 @@ const Roadmap = () => {
               </p>
             </div>
             <div
-              className={`md:size-14 size-10 max-md:absolute  bg-white border-2 border-black rounded-full flex items-center justify-center text-lg font-bold md:absolute relative md:transform md:-translate-x-1/2 md:left-1/2 max-md:left-[16px] max-sm:left-1`}
+              className={`md:size-14 size-10 max-md:absolute   bg-white border-2 border-black rounded-full flex items-center justify-center text-lg font-bold md:absolute relative md:transform md:-translate-x-1/2 md:left-1/2 max-md:left-[16px] max-sm:left-1`}
             >
               <Image
                 src="/assets/images/png/icon-img.png"
                 width={32}
                 height={27}
                 alt="arrow"
-                className="md:w-8 md:h-7 size-6"
+                className="md:w-8 md:h-7 size-6 pointer-events-none"
               />
             </div>
           </div>

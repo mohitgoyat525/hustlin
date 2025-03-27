@@ -1,14 +1,16 @@
 "use client";
-import { MinusIcon, PlusIcon } from '@/utils/icons';
-import React, { useState } from 'react'
-import CustomHeading from './common/CustomHeading';
-import { FAQS_LIST } from '@/utils/helper';
-const Faq = () => {
-       const [openIndex, setOpenIndex] = useState(null);
+import { MinusIcon, PlusIcon } from "@/utils/icons";
+import React, { useState } from "react";
+import CustomHeading from "./common/CustomHeading";
+import { FAQS_LIST } from "@/utils/helper";
 
-       const toggleFAQ = (index) => {
-         setOpenIndex(openIndex === index ? null : index);
-       };
+const Faq = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <>
       <div
@@ -31,17 +33,16 @@ const Faq = () => {
                 onClick={() => toggleFAQ(index)}
               >
                 <h2 className="lg:text-2xl md:text-xl font-semibold">{item}</h2>
-                <span className="font-semibold lg:text-2xl text-xl">
+                <span className="font-semibold lg:text-2xl text-xl transition-transform duration-300 ease-in-out">
                   {openIndex === index ? <MinusIcon /> : <PlusIcon />}
                 </span>
               </div>
               <div
-                className={`faq-answer overflow-hidden transition-all ease-linear duration-500`}
-                style={{
-                  maxHeight: openIndex === index ? "500px" : "1px",
-                  paddingTop: openIndex === index ? "16px" : "1px",
-                  paddingBottom: openIndex === index ? "16px" : "1px",
-                }}
+                className={`overflow-hidden transition-all ease-in-out duration-500 ${
+                  openIndex === index
+                    ? "max-h-96 opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
               >
                 {openIndex === index && (
                   <p className="lg:mt-4 mt-3 lg:text-base text-sm">
@@ -62,10 +63,12 @@ const Faq = () => {
         </div>
       </div>
       <div className="">
-        <p className='text-center pt-8 pb-6 text-base font-normal'>© Hustlin' Hardos 2022</p>
+        <p className="text-center pt-8 pb-6 text-base font-normal">
+          © Hustlin' Hardos 2022
+        </p>
       </div>
     </>
   );
-}
+};
 
-export default Faq
+export default Faq;
