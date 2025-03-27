@@ -76,7 +76,7 @@ const Minting = () => {
             </p>
                   </div>
                   <div className="">
-                      <Image src='/assets/images/webp/sad-employ.webp' alt="sad-employ" width={570} height={567} className=" w-full max-w-[570px] h-[567px] max-lg:h-full"/>
+                      <Image src='/assets/images/webp/sad-employ.webp' alt="sad-employ" width={570} height={567} className=" w-full max-w-[570px] h-[567px] max-lg:h-full pointer-events-none"/>
                   </div>
         </div>
               </div>

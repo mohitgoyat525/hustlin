@@ -42,8 +42,17 @@ const Header = () => {
             </Link>
             <ul className="flex items-center gap-5 max-sm:gap-3">
               {HEADER_SOCIAL_LIST.map((item, index) => (
-                <li key={index}>
-                  <Link href={item.link}>{item.icon}</Link>
+                <li
+                  className="transition-all ease-linear duration-300 hover:scale-100"
+                  key={index}
+                >
+                  <Link
+                    href={item.link}
+                    target='_blank'
+                    className="transition-all ease-linear duration-300 hover:scale-100"
+                  >
+                    {item.icon}
+                  </Link>
                 </li>
               ))}
               <li>
@@ -62,7 +71,7 @@ const Header = () => {
         <div className="flex items-center">
           {HEADER_THIRD_LIST.map((item, index) => (
             <div
-              className={`flex items-center px-6 justify-center border-s-2 border-solid border-black ${
+              className={`flex items-center px-6 justify-center border-s-2 border-solid border-black transition-all ease-linear duration-300 hover:bg-black  hover:text-[#FFD600] ${
                 index === 4 ? "!border-e-2" : ""
               } max-md:px-2 py-1`}
               key={index}

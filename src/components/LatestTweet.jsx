@@ -59,7 +59,7 @@ const LatestTweet = () => {
                       <p className="font-normal text-base pt-3">
                         {obj.description}
                       </p>
-                      <p className="text-base font-normal leading-[140%] w-full max-w-[83px] whitespace-nowrap cursor-pointer pt-4 border-b border-solid border-black">
+                      <p className="text-base font-normal leading-[140%] w-full max-w-[99px] whitespace-nowrap cursor-pointer pt-4 border-b border-solid border-black">
                         Read more ...
                       </p>
                     </div>
